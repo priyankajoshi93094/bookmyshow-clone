@@ -10,6 +10,15 @@ padding: 0;
     background-color: rgb(212, 24, 24);
     padding: 2rem;
 }
+.left{
+    display: flex;
+    
+}
+.my{
+    height: 60px;
+    width: 60px;
+    
+}
 
 h1{
     color: white;
@@ -46,7 +55,7 @@ h1{
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
-    max-width: 20%;
+  
 
 }
 
@@ -88,10 +97,15 @@ h1{
 
 }
 .card{
-    border: 0.5rem solid rgb(246, 229, 229);
-    background-color: rgb(208, 199, 199);
+    border: 0.5rem solid ;
+    background-color: rgb(246, 229, 229);
     border-radius: 10px;
     margin: 10px;
+    box-shadow: 8px 9px rgb(78, 71, 76);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+
    
 
 }
@@ -113,6 +127,15 @@ h1{
 
 .bot > img{
     max-width: 80%;
+}
+
+.card:hover{
+    background-color: darkcyan;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+button:hover{
+    color: rgb(6, 14, 14);
 }
 
 @media (max-width:650px){
@@ -138,9 +161,72 @@ h1{
     .hero{
         display: flex;
         justify-content: center;
+        
     }
     .hero > h2{
         margin-left: 20px;
         margin-right: 20px;
     }
+    
+}
+
+.big{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(67, 66, 66);
+}
+.one{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5rem;
+    background-color: rgb(67, 66, 66);
+    margin-top: 3.5rem;
+    
+}
+.lef > p{
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 2rem;
+    
+}
+
+.rig > button{
+    background-color:rgb(212, 24, 24); 
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.two{
+    background-color: rgb(106, 103, 103);
+    height: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+   padding: 2rem;
+    
+}
+
+.oh{
+    height: 4rem;
+
+}
+.first , .second, .third p{
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 249, 249);
+}
+
+.three{
+    margin-left: 5rem;
+    margin-top: 3rem;
+    color: rgb(255, 249, 249);
+    font-size: 1rem;
+}
+button:hover{
+    color: rgb(6, 14, 14);
 }
