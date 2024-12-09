@@ -23,12 +23,11 @@ padding: 0;
 h1{
     color: white;
 }
-.right button{
+
+nav a{
     margin-left: 0.8rem;
     font-size: 1rem;
     color: white;
-    background-color: rgb(212, 24, 24);
-    border: none;
     padding-top: 0.3rem;
     cursor: pointer;
 
@@ -133,8 +132,12 @@ h1{
     background-color: darkcyan;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+    
 }
 button:hover{
+    color: rgb(6, 14, 14);
+}
+nav a:hover{
     color: rgb(6, 14, 14);
 }
 
@@ -143,7 +146,7 @@ button:hover{
         flex-direction: column;
         align-items: center;
     }
-    .right{
+    nav a{
         display: flex;
         flex-direction: column;
         padding-top: 1rem;
@@ -170,63 +173,124 @@ button:hover{
     
 }
 
-.big{
-    height: 1000px;
+.big {
     width: 100%;
     background-color: rgb(67, 66, 66);
 }
-.one{
+
+
+.one {
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: space-around;
-    height: 5rem;
+    align-items: center; 
+    height: auto;
+    padding: 1rem;
     background-color: rgb(67, 66, 66);
     margin-top: 3.5rem;
-    
-}
-.lef > p{
-    font-size: 1.5rem;
-    color: white;
-    padding-top: 2rem;
-    
+    gap: 1rem; 
 }
 
-.rig > button{
-    background-color:rgb(212, 24, 24); 
+.lef > p {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.rig > button {
+    background-color: rgb(212, 24, 24);
     color: white;
     font-size: 1rem;
-    margin-top: 1rem;
     cursor: pointer;
     border-radius: 10px;
     padding: 1rem;
+    border: none;
+    text-align: center;
 }
 
-.two{
+ .two {
     background-color: rgb(106, 103, 103);
-    height: 7rem;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
-   padding: 2rem;
-    
+    flex-wrap: wrap; 
+    padding: 1.5rem;
+    gap: 1rem;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
 }
 
-.oh{
+.oh:hover{
+    transform: scale(1.05);
+}
+
+.oh {
     height: 4rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    
+} 
 
+.first, .second, .third {
+    text-align: center;
 }
-.first , .second, .third p{
+
+.first, .second, .third p {
     font-size: 1rem;
     text-align: center;
     color: rgb(255, 249, 249);
 }
 
-.three{
-    margin-left: 5rem;
-    margin-top: 3rem;
+
+.three {
+    margin: 1rem auto;
+    padding: 1rem;
     color: rgb(255, 249, 249);
     font-size: 1rem;
+    text-align: center; 
 }
-button:hover{
+
+.three h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+
+button:hover {
     color: rgb(6, 14, 14);
+    opacity: 0.9; 
+}
+
+
+@media (max-width: 768px) {
+    .one {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .lef > p {
+        font-size: 1rem; 
+    }
+
+    .rig > button {
+        width: 80%; 
+    }
+
+    .two {
+        flex-direction: column; 
+    }
+
+    .three {
+        margin: 0 auto;
+        padding: 0.5rem;
+        font-size: 0.9rem; 
+    }
+
+    .three h3 {
+        font-size: 1rem; 
+    }
+   
+
 }
